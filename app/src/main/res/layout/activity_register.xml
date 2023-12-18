@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_title"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:hint="Введите имя пользователя"
+            android:inputType="text"
+            android:layout_height="48dp"
+            android:autofillHints="username"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/user_emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Введите email"
+            android:autofillHints="email"
+            tools:ignore="HardcodedText,TextFields"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:hint="Введите пароль"
+            android:autofillHints="password"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="48dp"
+            android:hint="Подтвердите пароль"
+            android:autofillHints="confirm password"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регистрироваться"
+            android:background="@android:color/holo_green_light"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

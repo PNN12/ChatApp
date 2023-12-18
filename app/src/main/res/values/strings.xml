@@ -1,0 +1,35 @@
+
+<resources>
+    <string name="app_name">ChatX</string>
+    <string name="register_title">Регистрация</string>
+    <string name="username_hint">Введите ваш email</string>
+    <string name="login_title">Авторизация</string>
+    <string name="password_hint">Введите ваш пароль</string>
+    <string name="login_button_text">Войти</string>
+    <string name="group_chat_message_hint">Введите сообщение</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="profile_title">Мой профиль</string>
+    <string name="profile_image_label">Фото профиля</string>
+    <string name="profile_password_label">Пароль:</string>
+    <string name="profile_email_label">Email:</string>
+    <string name="profile_username_label">Имя:</string>
+    <string name="profile_edit_button_label">Редактировать</string>
+    <string name="edit_profile_password_label">Пароль:</string>
+    <string name="edit_profile_password_hint">Введите новый пароль</string>
+    <string name="edit_profile_button">Сохранить</string>
+    <string name="edit_profile_username_hint">Enter your new username</string>
+    <string name="edit_profile_username_label">Username:</string>
+
+
+
+
+
+
+
+
+    <string name="admob_app_id">YOUR_ADMOB_APP_ID_HERE</string>
+    <string name="group_chat_send_button_description">Отправить</string>
+
+
+
+</resources>

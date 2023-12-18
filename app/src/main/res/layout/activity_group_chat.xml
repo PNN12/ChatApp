@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/group_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/group_chat_input_layout"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="16dp"
+        android:transcriptMode="alwaysScroll" />
+
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="5dp"
+        android:text="Профиль"
+        android:textColor="@color/black"
+        android:background="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/group_chat_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/group_chat_message_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:outlineProvider="bounds"
+            android:hint="@string/group_chat_message_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="1"
+            android:minHeight="48dp"
+            android:maxWidth="488dp"
+            android:padding="8dp"
+            android:textColor="@color/grey"
+            android:autofillHints="emailAddress"
+            android:textColorHint="@color/black" />
+
+        <ImageButton
+            android:id="@+id/group_chat_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_send"
+            android:contentDescription="@string/group_chat_send_button_description" />
+
+    </LinearLayout>
+</RelativeLayout>
